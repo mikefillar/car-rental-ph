@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/car-rental-ph/static/css/main.1cd3057a.css",
+    "main.js": "/car-rental-ph/static/js/main.11a30cb2.js",
+    "static/js/453.f6be78cc.chunk.js": "/car-rental-ph/static/js/453.f6be78cc.chunk.js",
+    "static/media/download.png": "/car-rental-ph/static/media/download.9ae563d69dfa17bb3745.png",
+    "static/media/cars.jpg": "/car-rental-ph/static/media/cars.c3714e4e38ec78007958.jpg",
+    "static/media/main-car.png": "/car-rental-ph/static/media/main-car.c57d26fdada7b39a02c2.png",
+    "static/media/google.png": "/car-rental-ph/static/media/google.4c2e1a0a7b86b1c1061f.png",
+    "static/media/smart-car.png": "/car-rental-ph/static/media/smart-car.3ddf974aacaa43716730.png",
+    "static/media/320.jpg": "/car-rental-ph/static/media/320.84ab73b0c9133418f907.jpg",
+    "static/media/appstore.png": "/car-rental-ph/static/media/appstore.6dad5ed2aa7f971accc0.png",
+    "static/media/passat.jpg": "/car-rental-ph/static/media/passat.bd82bd1deac8c11e3c4d.jpg",
+    "static/media/mercedes.jpg": "/car-rental-ph/static/media/mercedes.0a6153731a2c1a68054a.jpg",
+    "static/media/golf6.jpg": "/car-rental-ph/static/media/golf6.595c0bbfc7ce2e50aa05.jpg",
+    "static/media/camry.jpg": "/car-rental-ph/static/media/camry.3d493a56558c50b677cc.jpg",
+    "static/media/audi.jpg": "/car-rental-ph/static/media/audi.d038cf70b700e34e607a.jpg",
+    "static/media/woman.png": "/car-rental-ph/static/media/woman.4ef354f363c77c3eb36a.png",
+    "static/media/man.png": "/car-rental-ph/static/media/man.050bdd8af720fe0e26f6.png",
+    "index.html": "/car-rental-ph/index.html",
+    "main.1cd3057a.css.map": "/car-rental-ph/static/css/main.1cd3057a.css.map",
+    "main.11a30cb2.js.map": "/car-rental-ph/static/js/main.11a30cb2.js.map",
+    "453.f6be78cc.chunk.js.map": "/car-rental-ph/static/js/453.f6be78cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cd3057a.css",
+    "static/js/main.11a30cb2.js"
+  ]
+}
