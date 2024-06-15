@@ -39,7 +39,7 @@ const Header = () => {
       </div>
       <nav>
         <ul
-          className={`absolute lg:static left-0 top-0 w-screen h-screen lg:w-auto lg:h-auto bg-white flex flex-col lg:flex-row justify-center items-center gap-5 
+          className={`absolute z-20 lg:static left-0 top-0 w-full h-screen lg:w-auto lg:h-auto bg-white flex flex-col lg:flex-row justify-center items-center gap-5 
             ${
               open
                 ? "translate-x-0 transition-transform ease-linear duration-300 lg:transition-none"
@@ -74,7 +74,7 @@ const Header = () => {
           </div>
         </ul>
       </nav>
-      <div className="absolute z-10 right-5 md:right-10 top:10 block lg:hidden">
+      <div className="absolute z-30 right-5 md:right-10 top:10 block lg:hidden">
         <span
           className="text-3xl cursor-pointer text-gray-600"
           onClick={() => {

@@ -13,7 +13,7 @@ const AboutBook = () => {
           Quick and easy car rental
         </h1>
       </div>
-      <div className="grid sm:cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-14">
+      <div className="grid sm:cols-1 lg:grid-cols-2 xl:grid-cols-3">
         <AboutBooksComponent
           src={carIcon}
           data={{
