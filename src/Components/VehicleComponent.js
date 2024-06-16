@@ -64,7 +64,7 @@ const VehicleComponent = (props) => {
       </div>
       <div className="flex w-full items-end h-full">
         <a
-          href="/"
+          href="/car-rental-ph/#book"
           className="w-full flex items-center justify-center py-3 bg-orange-600 text-white gap-1"
         >
           Book Ride

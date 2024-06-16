@@ -17,13 +17,13 @@ const Main = () => {
         <div className="flex flex-col sm:flex-row gap-2">
           <a
             className="px-6 py-4 font-bold text-white hover:shadow-lg hover:shadow-orange-500 bg-orange-600 rounded flex items-center justify-center gap-1 text-lg transition-all ease-linear duration-300"
-            href="#Book"
+            href="#book"
           >
             Book ride <ion-icon name="checkmark-outline"></ion-icon>
           </a>
           <a
             className="px-6 py-4 rounded font-bold bg-black text-white flex items-center justify-center gap-1 text-lg hover:text-black hover:bg-white transition-all ease-linear duration-300"
-            href="#Model"
+            href="#model"
           >
             Learn more <ion-icon name="chevron-forward-outline"></ion-icon>
           </a>

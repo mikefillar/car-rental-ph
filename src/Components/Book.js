@@ -24,7 +24,7 @@ const Book = () => {
     "VMW Passat CC",
   ];
   return (
-    <section className="sm:px-5 lg:px-10 py-5 my-14" id="Book">
+    <section className="sm:px-5 lg:px-10 py-5 my-14" id="book">
       <div className="rounded px-5 lg:px-20 py-10 bg-white shadow-xl flex flex-col gap-5">
         <h2 className="font-bold text-xl lg:text-2xl">Book a car</h2>
         <div>

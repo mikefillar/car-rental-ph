@@ -20,32 +20,32 @@ const Header = () => {
     {
       id: 1,
       link: "Home",
-      href: "/",
+      href: "/car-rental-ph/",
     },
     {
       id: 2,
       link: "About",
-      href: "/About",
+      href: "/car-rental-ph/about",
     },
     {
       id: 3,
       link: "Vehicle",
-      href: "/Vehicle",
+      href: "/car-rental-ph/vehicle",
     },
     {
       id: 4,
       link: "Review",
-      href: "/Review",
+      href: "/car-rental-ph/review",
     },
     {
       id: 5,
       link: "Our Team",
-      href: "/Team",
+      href: "/car-rental-ph/team",
     },
     {
       id: 6,
       link: "Contact",
-      href: "/Contact",
+      href: "/car-rental-ph/contact",
     },
   ];
   return (
@@ -53,7 +53,7 @@ const Header = () => {
       <div className=" flex justify-center items-center gap-2">
         <img className="h-14 hover:cursor-pointer" src={logo} alt="Cars.PH" />
         <a
-          href="/"
+          href="/car-rental-ph/"
           className="text-2xl font-bold text-gray-800 hover:cursor-pointer hidden sm:block"
         >
           Cars.PH
@@ -88,7 +88,7 @@ const Header = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-5 border  border-orange-500 rounded px-5 py-3">
               <a
                 className="text-gray-600 hover:text-orange-500 font-bold cursor-pointer"
-                href="/"
+                href="/car-rental-ph/"
               >
                 Sign In
               </a>
@@ -116,7 +116,7 @@ const Header = () => {
         <div className="flex justify-center items-center gap-5">
           <a
             className="text-gray-700 font-bold hover:text-orange-600 transition-all ease-linear duration-300"
-            href="/"
+            href="/car-rental-ph/"
           >
             Sign In
           </a>

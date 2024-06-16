@@ -11,12 +11,12 @@ const Pages = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/About" element={<About />} />
-        <Route exact path="/Vehicle" element={<Vehicle />} />
-        <Route exact path="/Review" element={<Review />} />
-        <Route exact path="/Team" element={<OurTeam />} />
-        <Route exact path="/Contact" element={<Contact />} />
+        <Route exact path="/car-rental-ph/" element={<Home />} />
+        <Route exact path="/car-rental-ph/about" element={<About />} />
+        <Route exact path="/car-rental-ph/vehicle" element={<Vehicle />} />
+        <Route exact path="/car-rental-ph/review" element={<Review />} />
+        <Route exact path="/car-rental-ph/team" element={<OurTeam />} />
+        <Route exact path="/car-rental-ph/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
