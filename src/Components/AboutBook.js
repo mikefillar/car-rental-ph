@@ -6,7 +6,7 @@ import AboutBooksComponent from "./AboutBooksComponent";
 
 const AboutBook = () => {
   return (
-    <section className="px-5 md:px-10 py-5">
+    <section className="px-5 md:px-10 py-5 mt-14">
       <div className="flex text-center flex-col justify-center items-center gap-4">
         <h2 className="font-semibold text-xl">Plan your trips now</h2>
         <h1 className="font-bold text-3xl md:text-4xl">

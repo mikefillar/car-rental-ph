@@ -18,7 +18,7 @@ const Download = () => {
             keep yourself going when times are tough and to stay inspired when
             reaching for new goals and dreams.
           </p>
-          <div className="display flex gap-4 items-center justify-center flex-col sm:flex-row">
+          <div className="display flex gap-4 items-center justify-center lg:justify-start flex-col sm:flex-row">
             <img className="w-40 cursor-pointer" src={google} alt="Google" />
             <img
               className="w-40 cursor-pointer"

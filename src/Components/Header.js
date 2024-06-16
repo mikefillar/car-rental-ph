@@ -3,28 +3,47 @@ import logo from "./img/smart-car.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  // const [active, setActive] = useState(1);
+  // const toggleActive = (e, id, href) => {
+  //   e.preventDefault();
+  //   setActive((active) => (active = id));
+  //   window.location.href = href;
+  // };
+  // const isActive = (id) => {
+  //   if (active === id) {
+  //     return "text-orange-600 border-b-2 border-gray-600";
+  //   } else {
+  //     return "text-gray-600";
+  //   }
+  // };
   const links = [
     {
+      id: 1,
       link: "Home",
       href: "/",
     },
     {
+      id: 2,
       link: "About",
       href: "/About",
     },
     {
+      id: 3,
       link: "Vehicle",
       href: "/Vehicle",
     },
     {
-      link: "Testimonial",
-      href: "/Testimonial",
+      id: 4,
+      link: "Review",
+      href: "/Review",
     },
     {
+      id: 5,
       link: "Our Team",
       href: "/Team",
     },
     {
+      id: 6,
       link: "Contact",
       href: "/Contact",
     },
@@ -33,9 +52,12 @@ const Header = () => {
     <header className="flex justify-between items-center py-4 px-5 md:py-5 md:px-10">
       <div className=" flex justify-center items-center gap-2">
         <img className="h-14 hover:cursor-pointer" src={logo} alt="Cars.PH" />
-        <h1 className="text-2xl font-bold text-gray-800 hover:cursor-pointer hidden sm:block">
+        <a
+          href="/"
+          className="text-2xl font-bold text-gray-800 hover:cursor-pointer hidden sm:block"
+        >
           Cars.PH
-        </h1>
+        </a>
       </div>
       <nav>
         <ul
@@ -49,7 +71,13 @@ const Header = () => {
           {links.map((link) => (
             <li key={link.link}>
               <a
-                className="text-gray-700 font-bold hover:text-orange-600 transition-all ease-linear duration-300"
+                // ${isActive(
+                //   link.id
+                // )}
+                className={` font-bold text-gray-600 hover:text-orange-600 transition-all ease-linear duration-300 cursor-pointer`}
+                // onClick={(e) => {
+                //   toggleActive(e, link.id, link.href);
+                // }}
                 href={link.href}
               >
                 {link.link}

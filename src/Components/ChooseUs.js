@@ -23,7 +23,7 @@ const ChooseUs = () => {
           </p>
           <a
             className="px-6 mt-4 py-4 font-bold text-white hover:shadow-lg hover:shadow-orange-500 bg-orange-600 rounded flex items-center justify-center gap-1 text-lg transition-all ease-linear duration-300 w-full"
-            href="/#Book"
+            href="#Book"
           >
             Book ride <ion-icon name="checkmark-outline"></ion-icon>
           </a>

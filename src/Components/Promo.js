@@ -7,8 +7,11 @@ const Promo = () => {
         Save big with our cheapest car rental!
       </h1>
       <p className=" text-xl lg:text-2xl">
-        Top airports, local suppliers, and{" "}
-        <span className="text-orange-600">24/7</span>support.
+        “Unlock Adventure:{" "}
+        <span className="text-orange-600">
+          Drive Your Dreams with Our Fleet!
+        </span>
+        ”
       </p>
     </div>
   );

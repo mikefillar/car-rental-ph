@@ -30,7 +30,7 @@ const ModelButtons = () => {
         </h2>
         <table className="text-left">
           <tbody className="border border-gray-600">
-            <tr>
+            <tr key={car.Model}>
               <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
                 Model
               </th>

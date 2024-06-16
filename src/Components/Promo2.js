@@ -2,7 +2,7 @@ import React from "react";
 
 const Promo2 = () => {
   return (
-    <div className="text-center bg-gray-800 text-white px-5 sm:px-10 md:px-20 lg:px-32 py-16 flex flex-col items-center justify-center gap-5">
+    <div className="mt-14 text-center bg-gray-800 text-white px-5 sm:px-10 md:px-20 lg:px-32 py-16 flex flex-col items-center justify-center gap-5">
       <h1 className="font-bold text-3xl md:text-4xl text-white flex justify-center items-center flex-col xl:flex-row gap-4">
         Book a car by getting in touch with us{" "}
       </h1>

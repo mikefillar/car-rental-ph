@@ -2,8 +2,8 @@ const CarData = [
   {
     id: 1,
     price: "1,500",
-    Model: "Audi",
-    Mark: "A1",
+    Model: "Audi A1",
+    Mark: "Audi",
     Year: "2012",
     Door: "4/5",
     AC: "Yes",

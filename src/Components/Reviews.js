@@ -38,7 +38,7 @@ const Reviews = () => {
             <div className="flex justify-start flex-col sm:flex-row items-center gap-2 mt-6">
               <img className="w-14 md:w-20" src={man} alt="man" />
               <div>
-                <p>Joe Shmoe</p>
+                <p>Joe Smith</p>
                 <p>Quezon City</p>
               </div>
             </div>
