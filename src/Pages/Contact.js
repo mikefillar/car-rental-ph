@@ -60,9 +60,8 @@ const Contact = () => {
             <span className="text-orange-600 font-semibold text-lg">*</span>
           </label>
           <textarea
-            className="text-gray-600 px-5 py-2 bg-orange-50"
+            className="text-gray-600 px-5 py-2 w-full bg-orange-50"
             rows="5"
-            cols="30"
             placeholder="Your message here..."
           ></textarea>
           <button
