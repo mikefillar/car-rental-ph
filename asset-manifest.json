@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/car-rental-ph/static/css/main.a7a44d03.css",
-    "main.js": "/car-rental-ph/static/js/main.2d73929a.js",
+    "main.css": "/car-rental-ph/static/css/main.60c23463.css",
+    "main.js": "/car-rental-ph/static/js/main.3f2d1e15.js",
     "static/js/453.f6be78cc.chunk.js": "/car-rental-ph/static/js/453.f6be78cc.chunk.js",
     "static/media/download.png": "/car-rental-ph/static/media/download.9ae563d69dfa17bb3745.png",
     "static/media/cars.jpg": "/car-rental-ph/static/media/cars.c3714e4e38ec78007958.jpg",
@@ -25,12 +25,12 @@
     "static/media/woman.png": "/car-rental-ph/static/media/woman.4ef354f363c77c3eb36a.png",
     "static/media/man.png": "/car-rental-ph/static/media/man.050bdd8af720fe0e26f6.png",
     "index.html": "/car-rental-ph/index.html",
-    "main.a7a44d03.css.map": "/car-rental-ph/static/css/main.a7a44d03.css.map",
-    "main.2d73929a.js.map": "/car-rental-ph/static/js/main.2d73929a.js.map",
+    "main.60c23463.css.map": "/car-rental-ph/static/css/main.60c23463.css.map",
+    "main.3f2d1e15.js.map": "/car-rental-ph/static/js/main.3f2d1e15.js.map",
     "453.f6be78cc.chunk.js.map": "/car-rental-ph/static/js/453.f6be78cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7a44d03.css",
-    "static/js/main.2d73929a.js"
+    "static/css/main.60c23463.css",
+    "static/js/main.3f2d1e15.js"
   ]
 }
