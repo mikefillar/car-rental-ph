@@ -15,12 +15,12 @@ function App() {
         <Header />
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/car-rental-ph/" element={<Home />} />
-          <Route path="/car-rental-ph/about" element={<About />} />
-          <Route path="/car-rental-ph/vehicle" element={<Vehicle />} />
-          <Route path="/car-rental-ph/review" element={<Reviews />} />
-          <Route path="/car-rental-ph/team" element={<OurTeam />} />
-          <Route path="/car-rental-ph/contact" element={<Contact />} />
+          <Route exact path="/car-rental-ph/" element={<Home />} />
+          <Route exact path="/car-rental-ph/about" element={<About />} />
+          <Route exact path="/car-rental-ph/vehicle" element={<Vehicle />} />
+          <Route exact path="/car-rental-ph/review" element={<Reviews />} />
+          <Route exact path="/car-rental-ph/team" element={<OurTeam />} />
+          <Route exact path="/car-rental-ph/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>

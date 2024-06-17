@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  console.log(open);
   // const [active, setActive] = useState(1);
   // const toggleActive = (e, id, href) => {
   //   e.preventDefault();
@@ -79,6 +80,9 @@ const Header = () => {
                 // onClick={(e) => {
                 //   toggleActive(e, link.id, link.href);
                 // }}
+                onClick={() => {
+                  setOpen(!open);
+                }}
                 to={link.href}
               >
                 {link.link}
