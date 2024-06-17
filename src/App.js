@@ -2,17 +2,28 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Vehicle from "./Pages/Vehicle";
+import Header from "./Components/Header";
+import Reviews from "./Components/Reviews";
+import OurTeam from "./Pages/OurTeam";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
-    <Router>
-      <div className="font-body bg-color-body">
+    <div className="font-body bg-color-body">
+      <Router>
+        <Header />
         <Routes>
-          <Route exact path="/car-rental-ph/" element={<Home />} />
-          <Route exact path="/car-rental-ph/about" element={<About />} />
+          <Route index element={<Home />} />
+          <Route path="/car-rental-ph/" element={<Home />} />
+          <Route path="/car-rental-ph/about" element={<About />} />
+          <Route path="/car-rental-ph/vehicle" element={<Vehicle />} />
+          <Route path="/car-rental-ph/review" element={<Reviews />} />
+          <Route path="/car-rental-ph/team" element={<OurTeam />} />
+          <Route path="/car-rental-ph/contact" element={<Contact />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

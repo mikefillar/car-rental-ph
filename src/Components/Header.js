@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "./img/smart-car.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -59,7 +60,7 @@ const Header = () => {
           Cars.PH
         </a>
       </div>
-      <nav>
+      <>
         <ul
           className={`absolute z-20 lg:static left-0 top-0 w-full h-screen lg:w-auto lg:h-auto bg-white flex flex-col lg:flex-row justify-center items-center gap-5 
             ${
@@ -70,7 +71,7 @@ const Header = () => {
         >
           {links.map((link) => (
             <li key={link.link}>
-              <a
+              <Link
                 // ${isActive(
                 //   link.id
                 // )}
@@ -78,10 +79,10 @@ const Header = () => {
                 // onClick={(e) => {
                 //   toggleActive(e, link.id, link.href);
                 // }}
-                href={link.href}
+                to={link.href}
               >
                 {link.link}
-              </a>
+              </Link>
             </li>
           ))}
           <div className="block lg:hidden">
@@ -101,7 +102,7 @@ const Header = () => {
             </div>
           </div>
         </ul>
-      </nav>
+      </>
       <div className="absolute z-30 right-5 md:right-10 top:10 block lg:hidden">
         <span
           className="text-3xl cursor-pointer text-gray-600"

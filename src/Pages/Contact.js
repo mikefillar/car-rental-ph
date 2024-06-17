@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="grid md:grid-cols-2 px-3 sm:px-5 md:px-10 lg:px-20 gap-10">
         <div className="flex flex-col gap-8 md:mr-10 text-center md:text-left">
           <h2 className="font-semibold text-xl">
-            “Unlock Adventure: Drive Your Dreams with Our Fleet!”
+            Unlock Adventure: Drive Your Dreams with Our Fleet!
           </h2>
           <h1 className="font-bold text-4xl">Need additional information?</h1>
           <p className="text-gray-600">
