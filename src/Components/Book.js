@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import audi from "./img/cars/audi.jpg";
 import golf from "./img/cars/golf6.jpg";
 import camry from "./img/cars/camry.jpg";
@@ -17,6 +17,7 @@ const Book = () => {
   const dropDateRef = useRef(null);
   const handleSubmit = (event) => {
     event.preventDefault();
+    document.body.style.overflow = "hidden";
     setId((id) => id + 1);
     let modal = document.getElementById("modal");
     let display = document.getElementById("error");
@@ -72,9 +73,18 @@ const Book = () => {
       zipRef.current.value === ""
     ) {
       error2.classList.remove("hidden");
+    } else {
+      document.getElementById("modal").classList.add("hidden");
+      let display = document.getElementById("error");
+      let errorMessage = document.getElementById("errorMessage");
+      error2.classList.add("hidden");
+      display.classList.remove("hidden");
+      display.classList.add("bg-lime-200", "text-white");
+      errorMessage.innerHTML =
+        "Booking submitted! Check your email for the booking confirmation.";
     }
   };
-
+  //modal
   //array of locations
   const locations = [
     "Manila",
@@ -248,11 +258,17 @@ const Book = () => {
 
       {/* Modal */}
       <div className="hidden py-5" id="modal">
-        <div className="absolute left-0 top-0 flex items-start justify-center h-screen w-full">
-          <div className="w-full sm:w-5/6 md:w-4/5 lg:w-3/5 bg-white border-2 border-white">
+        <div className="absolute left-0 top-0 flex items-start justify-center w-full h-2vh bg-gray-500 bg-opacity-50">
+          <div className="w-full h-screen sm:w-5/6 md:w-4/5 lg:w-3/5 bg-white border-2 border-white overflow-y-scroll">
             <h1 className="font-bold text-white bg-orange-600 text-2xl uppercase px-4 py-3 flex items-center justify-between">
               Complete Reservation
-              <span className="text-2xl mt-1 cursor-pointer">
+              <span
+                className="text-2xl mt-1 cursor-pointer "
+                onClick={() => {
+                  document.getElementById("modal").classList.add("hidden");
+                  document.body.style.overflow = "auto";
+                }}
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </span>
             </h1>
@@ -327,7 +343,7 @@ const Book = () => {
               <div className="hidden" id="error2">
                 <div className="flex items-center justify-between bg-red-200 px-4 py-1">
                   <p className="text-md text-red-800 font-semibold">
-                    error message
+                    All fields are required!
                   </p>
                   <span className="text-xl mt-1 text-red-800 cursor-pointer">
                     <ion-icon name="close-outline"></ion-icon>

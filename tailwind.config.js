@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         "color-body": "##F8F8F8",
       },
+      height: {
+        "2vh": "200vh",
+      },
     },
   },
   plugins: [],
