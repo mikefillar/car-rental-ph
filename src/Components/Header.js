@@ -4,20 +4,17 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
-  // const [active, setActive] = useState(1);
-  // const toggleActive = (e, id, href) => {
-  //   e.preventDefault();
-  //   setActive((active) => (active = id));
-  //   window.location.href = href;
-  // };
-  // const isActive = (id) => {
-  //   if (active === id) {
-  //     return "text-orange-600 border-b-2 border-gray-600";
-  //   } else {
-  //     return "text-gray-600";
-  //   }
-  // };
+  const [active, setActive] = useState(1);
+  const toggleActive = (id) => {
+    setActive((active) => (active = id));
+  };
+  const isActive = (id) => {
+    if (active === id) {
+      return "text-orange-600 border-b-2 border-gray-600";
+    } else {
+      return "text-gray-600";
+    }
+  };
   const links = [
     {
       id: 1,
@@ -56,7 +53,7 @@ const Header = () => {
         <img className="h-14 hover:cursor-pointer" src={logo} alt="Cars.PH" />
         <a
           href="/car-rental-ph/"
-          className="text-2xl font-bold text-gray-800 hover:cursor-pointer hidden sm:block"
+          className="text-2xl font-bold text-gray-800 hover:cursor-pointer"
         >
           Cars.PH
         </a>
@@ -73,14 +70,11 @@ const Header = () => {
           {links.map((link) => (
             <li key={link.link}>
               <Link
-                // ${isActive(
-                //   link.id
-                // )}
-                className={` font-bold text-gray-600 hover:text-orange-600 transition-all ease-linear duration-300 cursor-pointer`}
-                // onClick={(e) => {
-                //   toggleActive(e, link.id, link.href);
-                // }}
+                className={` font-bold ${isActive(
+                  link.id
+                )} text-gray-600 hover:text-orange-600 transition-all ease-linear duration-300 cursor-pointer`}
                 onClick={() => {
+                  toggleActive(link.id);
                   setOpen(!open);
                 }}
                 to={link.href}
@@ -90,16 +84,16 @@ const Header = () => {
             </li>
           ))}
           <div className="block lg:hidden">
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-5 border  border-orange-500 rounded px-5 py-3">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-5 border-t  border-orange-500 rounded px-5 py-3">
               <a
-                className="text-gray-600 hover:text-orange-500 font-bold cursor-pointer"
+                className="text-gray-700 font-bold hover:text-orange-600 transition-all ease-linear duration-300"
                 href="/car-rental-ph/"
               >
                 Sign In
               </a>
               <button
                 type="button"
-                className="text-gray-600 hover:text-orange-500 font-bold"
+                className="font-bold px-5 py-3 rounded text-white bg-orange-600 hover:shadow-lg hover:shadow-orange-500 transition-all ease-linear duration-300"
               >
                 Register
               </button>
