@@ -21,7 +21,10 @@ const Select = (props) => {
         {props.data.label}
         <span className="text-orange-600 text-lg font-bold"> *</span>
       </label>
-      <select className="w-full rounded border border-gray-400 px-4 py-2 text-gray-600 text-sm">
+      <select
+        required
+        className="w-full rounded border border-gray-400 px-4 py-2 text-gray-600 text-sm"
+      >
         <option value={props.data.default}>{props.data.default}</option>
         {selectArray.map((element) => {
           return (

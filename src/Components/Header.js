@@ -84,7 +84,7 @@ const Header = () => {
             </li>
           ))}
           <div className="block lg:hidden">
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-5 border-t  border-orange-500 rounded px-5 py-3">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-5 border-t  border-orange-500 px-5 py-3">
               <a
                 className="text-gray-700 font-bold hover:text-orange-600 transition-all ease-linear duration-300"
                 href="/car-rental-ph/"
