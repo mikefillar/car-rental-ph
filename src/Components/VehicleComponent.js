@@ -3,7 +3,7 @@ import React from "react";
 const VehicleComponent = (props) => {
   return (
     <div
-      className="flex flex-col justify-center items-center border shadow-lg shadow-gray-400 p-5 rounded object-contain"
+      className="flex flex-col justify-center items-center border shadow-lg shadow-gray-400 p-2 sm:p-5 rounded object-contain"
       key={props.data.id}
     >
       <img
@@ -31,13 +31,13 @@ const VehicleComponent = (props) => {
               <ion-icon name="star-outline"></ion-icon>
             </span>
           </div>
-          <p className="flex gap-1 px-3">
+          <p className="flex gap-1 md:px-3">
             <span className="text-xl">
               <ion-icon name="car-sport-outline"></ion-icon>
             </span>
             {props.data.mark}
           </p>
-          <p className="flex gap-1 px-3">
+          <p className="flex gap-1 md:px-3">
             <span className="text-xl">
               <ion-icon name="car-sport-outline"></ion-icon>
             </span>
@@ -48,15 +48,15 @@ const VehicleComponent = (props) => {
         <div className="flex flex-col gap-4 text-right">
           <h1 className="font-bold text-2xl">&#x20B1; {props.data.price}</h1>
           <p>per day</p>
-          <p className="flex gap-1 justify-end px-3">
+          <p className="flex gap-1 justify-end md:px-3">
             <span className="text-xl">
-              <ion-icon name="car-sport-outline"></ion-icon>
+              <ion-icon name="checkmark-outline"></ion-icon>
             </span>
-            {props.data.door}
+            {props.data.door} Door
           </p>
-          <p className="flex gap-1 justify-end px-3">
+          <p className="flex gap-1 justify-end md:px-3">
             <span className="text-xl">
-              <ion-icon name="car-sport-outline"></ion-icon>
+              <ion-icon name="checkmark-outline"></ion-icon>
             </span>
             {props.data.fuel}
           </p>

@@ -13,7 +13,7 @@ const Vehicle = () => {
   const carArray = [audi, golf, camry, modern, mercedes, passat];
   return (
     <section className=" mt-14">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 px-3 sm:px-5 md:px-10 lg:px-16 xl:px-32 gap-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 px-3 sm:px-5 md:px-10 lg:px-16 xl:px-32 gap-5 md:gap-10">
         {CarData.map((car) => (
           <VehicleComponent
             data={{

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import audi from "./img/cars/audi.jpg";
 import golf from "./img/cars/golf6.jpg";
 import camry from "./img/cars/camry.jpg";

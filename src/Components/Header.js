@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  if (open === true) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
   const [active, setActive] = useState(1);
   const toggleActive = (id) => {
     setActive((active) => (active = id));
