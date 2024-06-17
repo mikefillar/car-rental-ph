@@ -15,9 +15,11 @@ const Book = () => {
   const dropOffRef = useRef(null);
   const pickDateRef = useRef(null);
   const dropDateRef = useRef(null);
+
+  //fist booking form
   const handleSubmit = (event) => {
     event.preventDefault();
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
     setId((id) => id + 1);
     let modal = document.getElementById("modal");
     let display = document.getElementById("error");
@@ -33,6 +35,8 @@ const Book = () => {
       dropDateRef.current.value === ""
     ) {
       display.classList.remove("hidden");
+      display.classList.remove("bg-lime-200", "text-lime-800");
+      display.classList.add("bg-red-200", "text-red-900");
       errorMessage.innerHTML = "All fields are required!";
     } else {
       let data = {
@@ -78,10 +82,11 @@ const Book = () => {
       let display = document.getElementById("error");
       let errorMessage = document.getElementById("errorMessage");
       error2.classList.add("hidden");
-      display.classList.remove("hidden");
-      display.classList.add("bg-lime-200", "text-white");
+      display.classList.remove("hidden", "bg-red-200", "text-red-900");
+      display.classList.add("bg-lime-200", "text-lime-800");
       errorMessage.innerHTML =
         "Booking submitted! Check your email for the booking confirmation.";
+      // document.body.style.overflow = "auto";
     }
   };
   //modal
@@ -111,10 +116,7 @@ const Book = () => {
     <section className="relative sm:px-5 lg:px-10 py-5 my-14" id="book">
       <div className="rounded px-5 lg:px-20 py-10 bg-white shadow-xl flex flex-col gap-5">
         <h2 className="font-bold text-xl lg:text-2xl">Book a car</h2>
-        <div
-          className="hidden bg-red-200 text-red-900 font-semibold rounded px-4 py-2"
-          id="error"
-        >
+        <div className="hidden font-semibold rounded px-4 py-2" id="error">
           <div className="flex justify-between items-center">
             <p className="" id="errorMessage">
               {" "}
@@ -258,7 +260,7 @@ const Book = () => {
 
       {/* Modal */}
       <div className="hidden py-5" id="modal">
-        <div className="absolute left-0 top-0 flex items-start justify-center w-full h-2vh bg-gray-500 bg-opacity-50">
+        <div className="absolute left-0 top-0 flex items-start justify-center w-full h-screen bg-gray-500 bg-opacity-50">
           <div className="w-full h-screen sm:w-5/6 md:w-4/5 lg:w-3/5 bg-white border-2 border-white overflow-y-scroll">
             <h1 className="font-bold text-white bg-orange-600 text-2xl uppercase px-4 py-3 flex items-center justify-between">
               Complete Reservation
@@ -266,7 +268,7 @@ const Book = () => {
                 className="text-2xl mt-1 cursor-pointer "
                 onClick={() => {
                   document.getElementById("modal").classList.add("hidden");
-                  document.body.style.overflow = "auto";
+                  // document.body.style.overflow = "auto";
                 }}
               >
                 <ion-icon name="close-outline"></ion-icon>
