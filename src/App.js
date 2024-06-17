@@ -1,30 +1,18 @@
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Book from "./Components/Book";
-import AboutBook from "./Components/AboutBook";
-import Models from "./Components/Models";
-import Promo from "./Components/Promo";
-import ChooseUs from "./Components/ChooseUs";
-import Reviews from "./Components/Reviews";
-import Faq from "./Components/Faq";
-import Download from "./Components/Download";
-import Footer from "./Components/Footer";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 function App() {
   return (
-    <div className="font-body bg-color-body">
-      <Header />
-      <Main />
-      <Book />
-      <AboutBook />
-      <Models />
-      <Promo />
-      <ChooseUs />
-      <Reviews />
-      <Faq />
-      <Download />
-      <Footer />
-    </div>
+    <Router>
+      <div className="font-body bg-color-body">
+        <Routes>
+          <Route exact path="/car-rental-ph/" element={<Home />} />
+          <Route exact path="/car-rental-ph/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
